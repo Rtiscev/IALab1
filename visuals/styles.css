@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1%;
+    overflow-x: hidden;
+}
+
+* {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.inputData {
+    display: flex;
+    flex-direction: column;
+}
+
+.matrixSizeInput input {
+    width: 3rem;
+    color: purple;
+}
+
+.matrixSizeInput p {
+    display: inline;
+}
+
+.GenerateBtn {
+    background-color: darkkhaki;
+    border-radius: 10%;
+    color: black;
+}
+
+#Matrix {
+    display: grid;
+}
+
+#Matrix input {
+    display: flex;
+    color: red;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    /* margin: ; */
+}
+
+.rightSide {
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+#from_selections,
+#on_selections {
+    width: auto;
+    color: darkblue;
+}
+
+#goAhead {
+    color: coral;
+}
+
+#from_selections option,
+#on_selections option {
+    color: red;
+}
+
+.putOnDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#steps {
+    height: 65vh;
+    /* overflow-y: scroll; */
+}
+
+#tempHolder {
+    display: flex;
+    flex-direction: row;
+}
+
+#Terminal {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-items: start;
+}
+
+#Terminal>button {
+    color: black;
+}
+
+#query {
+    width: 100%;
+    color: black;
+}
+
+#Matrix input {
+    font-size: 2.5rem;
+}

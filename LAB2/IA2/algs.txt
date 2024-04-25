@@ -1,0 +1,6 @@
+V Breath first.
+V Bidirectional Search.
+V Depth first.
+A-star.
+Greedy best first search.
+Uniform Cost

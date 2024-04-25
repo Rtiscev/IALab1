@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="leftSide">
+        <div class="inputData">
+            <div class="matrixSizeInput">
+                <label>Введите размеры матрицы:</label>
+                <input id="m_Rows" type="number">
+                <p>x</p>
+                <input id="m_Columns" type="number">
+            </div>
+        </div>
+        <button class="GenerateBtn" onclick="GenerateMatrix()">Сгенерировать пустую матрицу</button>
+        <button class="GenerateBtn" onclick="FillMatrix()">Сохранить блоки</button>
+        <div class="putOnDiv">
+            <p>Поставь </p>
+            <select name="M_blocks" id="from_selections"></select>
+            <p>на </p>
+            <select name="M_blocks" id="on_selections"></select>
+            <button id="goAhead" onclick="putOn()">Вперёд</button>
+        </div>
+        <div id="tempHolder">
+            <p>Временный хранитель (рука):</p>
+            <p id="hand"></p>
+        </div>
+        <p>Шаги, которые были предприняты:</p>
+        <div id="steps"></div>
+    </div>
+
+    <div class="rightSide">
+        <div id="Matrix"></div>
+        <div id="Terminal">
+            <input id="query" type="text">
+            <button onclick="SubmitQuery()">Отправить</button>
+            <div id="replies"></div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="script.js"></script>
+
+</html>
